@@ -32,7 +32,6 @@ a {
 
 h3 {
     color: #0084FD;
-    width: ;
 }
 
 .mb-40 {
@@ -133,7 +132,7 @@ header {
     background-color: #B5DDFF;
     border-radius: 20px;
     padding: 20px 15px;
-    min-height: 100%;
+    max-height: 100%;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -190,3 +189,58 @@ header {
 
 /* Sezione planning e developement */
 
+#strategic-planning {
+    background-color: #9792E4;
+    padding: 40px 0;
+}
+
+#sp-column {
+    background-color: transparent;
+    padding-top: 30px;
+}
+
+#ad-column {
+    background-color: #fff;
+    border-radius: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sp-image, #ad-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+#sp-image {
+    border: 2px solid white;
+}
+
+#ad-image {
+    border: 2px solid black;
+}
+
+#sp-column h3 {
+    width: 300px;
+    height: 25px;
+    background-color: #fff;
+}
+
+#ad-column h3 {
+    width: 250px;
+    height: 20px;
+    background-color: black;
+}
+
+#ad-column .feat-description {
+    height: 100px;
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+}
