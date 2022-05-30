@@ -5,6 +5,84 @@
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 100px;
     font-family: 'PT Sans', sans-serif;
 }
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* COLORS */
+
+/* AZZURRO SCURO: #0084FD
+AZZURRO CHIARO: #B5DDFF
+VIOLETTO: #9792E4
+ARANCIO: #FDC15F
+GRIGIO PER TESTI: #5A6E7F
+GRIGIO SCURO FOOTER: #333333 */
+
+header {
+    height: 100px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0084FD;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: 30px;
+    background-color: #fff;
+}
+
+#small-navbar {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: none;
+}
+
+#large-navbar {
+    display: none;
+}
+
+#large-navbar li {
+    width: 90px;
+    height: 30px;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+#large-navbar a {
+    color: #fff;
+}
+
