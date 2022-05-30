@@ -1,3 +1,5 @@
+/* IMPOSTAZIONI GENERALI */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    padding-top: 100px;
+    padding-top: 170px;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -25,7 +27,20 @@ a {
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
+}
+
+h3 {
+    color: #0084FD;
+    width: ;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 /* COLORS */
@@ -35,7 +50,11 @@ AZZURRO CHIARO: #B5DDFF
 VIOLETTO: #9792E4
 ARANCIO: #FDC15F
 GRIGIO PER TESTI: #5A6E7F
-GRIGIO SCURO FOOTER: #333333 */
+GRIGIO SCURO FOOTER: #333333
+__________________________________ */
+
+
+/* Intestazione con logo e menu */
 
 header {
     height: 100px;
@@ -46,10 +65,11 @@ header {
     left: 0;
     right: 0;
     background-color: #0084FD;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     z-index: 1;
+    margin-bottom: 80px;
 }
 
 #header-container {
@@ -68,7 +88,6 @@ header {
     width: 30px;
     height: 30px;
     background-color: #fff;
-    display: none;
 }
 
 #large-navbar {
@@ -86,3 +105,74 @@ header {
     color: #fff;
 }
 
+/* _________________________________ */
+
+
+/* Caratteristiche principali */
+
+#main-features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-features, .column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 20px 15px;
+    min-height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.text-card {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-left {
+    text-align: left;
+}
+
+.image-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.feat-title {
+    width: 300px;
+    height: 30px;
+    background-color: #0084FD;
+}
+
+.feat-description {
+    width: 300px;
+    height: 200px;
+    background-color: #5A6E7F;
+}
+
+#blue-btn {
+    width: 180px;
+    height: 25px;
+    background-color: #0084FD;
+}
+
+#smartphone {
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+}
+
+.feat-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #0084FD;
+}
