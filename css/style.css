@@ -111,21 +111,24 @@ header {
 
 /* Caratteristiche principali */
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .column {
-    /* background-color: #B5DDFF; */
+    background-color: #B5DDFF;
     padding: 1rem;
     margin-bottom: 2rem;
     /* Da togliere */
-    min-height: 400px;
+    height: 400px;
     width: 400px;
     border: 1px dashed black;
 }
 
-.card {
-
-}
-
 .double-column {
+    background-color: #B5DDFF;
     padding: 1rem;
     margin-bottom: 2rem;
     /* Da togliere */
@@ -134,124 +137,16 @@ header {
     border: 1px dashed black;;
 }
 
-/* 
-.text-card {
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#text-left {
-    align-items: flex-start;
-}
-
-.image-card {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.feat-title {
-    width: 80%;
-    height: 30px;
-    background-color: #0084FD;
-}
-
-.feat-description {
-    width: 100%;
-    height: 200px;
-    background-color: #5A6E7F;
-}
-
-#blue-btn {
-    width: 180px;
-    height: 25px;
-    background-color: #0084FD;
-}
-
-#smartphone {
-    width: 200px;
-    height: 250px;
-    background-color: #fff;
-}
-
-.feat-icon {
-    width: 80px;
-    height: 80px;
-    background-color: #0084FD;
-} */
 /* ______________________________________ */
 
 
 /* Sezione planning e developement */
 
-#strategic-planning {
-    background-color: #9792E4;
-    padding: 40px 0;
-}
-
-#planning .column{
+.planning .column{
     background-color: transparent;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
 
-#sp-column {
-    background-color: transparent;
-    padding: 30px 0;
-}
-
-#ad-column {
-    background-color: #fff;
-    border-radius: 40px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-#sp-image {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 40px;
-    border: 2px solid white;
-}
-
-#ad-image {
-    border: 2px solid black;
-    width: 250px;
-    height: 200px;
-    margin-bottom: 40px;
-}
-
-#sp-column h3 {
-    width: 300px;
-    height: 25px;
-    background-color: #fff;
-}
-
-#ad-column h3 {
-    width: 250px;
-    height: 20px;
-    background-color: black;
-}
-
-#ad-column .feat-description {
-    height: 100px;
-    width: 200px;
-}
-
-#arrow {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: grey;
-}
 /* ___________________________ */
 
 
@@ -267,8 +162,9 @@ header {
         max-width: 700px;
     }
     
-    #main-features {
+    .flex-container {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         margin: 0 ;
         }
@@ -281,6 +177,10 @@ header {
     .double-column {
         width: calc(100% / 3 * 2);
         margin: 0;
+    }
+
+    .planning .column {
+        margin-bottom: 1rem;
     }
 }
 
@@ -300,5 +200,15 @@ header {
        display: block;
    }
 
-  
+   .planning {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       padding: 0 4rem;
+   }
+
+   .planning .column {
+    margin-bottom: 1rem;
+    width: 50%;
+}
 }
