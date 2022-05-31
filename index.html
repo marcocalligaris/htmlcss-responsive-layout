@@ -1,117 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Responsive</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <!-- Intestazione con logo e menu -->
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Responsive</title>
+    </head>
+    <body>
+        <!-- Intestazione con logo e menu -->
+        <header>
 
-        <!-- Contenitore del logo + menu di destra -->
-        <div class="container" id="header-container">
-
-            <!-- Logo aziendale -->
-            <a href="#"><img src="" alt="" id="logo"></a>
-
-            <!-- Menu a comparsa per viewport sotto i 480px  e sotto i 768px -->
-            <nav id="small-navbar">
-                
-            </nav>
-
-            <!-- Menu a comparsa per viewport sopra i 992 px -->
-            <nav id="large-navbar">
-                <ul>
-                    <li>
-                        <a href="#">Planning</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Get Started</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-        <!-- Corpo principale -->
-        <main>
-            <section>
-
-                <!-- Caratteristiche principali -->
-                <div class="container mb-40" id="main-features">
-                    <div class="double-column">
-                        <div class="text-card" id="text-left">
-                            <h3 class="feat-title mb-30"></h3>
-                            <p class="feat-description mb-30"></p>
-                            <div class="mb-30" id="blue-btn"><a href="#" class="button"></a></div>
-                        </div>
-                        <div class="image-card">
-                            <img src="" alt="" id="smartphone">
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="text-card">
-                            <div class="feat-icon mb-30"></div>
-                            <h3 class="feat-title mb-40"></h3>
-                            <p class="feat-description"></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="text-card">
-                            <div class="feat-icon mb-30"></div>
-                            <h3 class="feat-title mb-40"></h3>
-                            <p class="feat-description"></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="text-card">
-                            <div class="feat-icon mb-30"></div>
-                            <h3 class="feat-title mb-40"></h3>
-                            <p class="feat-description"></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="text-card">
-                            <div class="feat-icon mb-30"></div>
-                            <h3 class="feat-title mb-40"></h3>
-                            <p class="feat-description"></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="strategic-planning">
-
-                <!-- Sezione planning e developement -->
-                <div class="container" id="planning">
-                    <div class="column mb-40" id="sp-column">
-                        <div id="sp-image"></div>
-                        <h3 class="mb-40"></h3>
-                        <p class="feat-description"></p>
-                    </div>
-                    <div class="column mb-40" id="ad-column">
-                        <div id="ad-image"></div>
-                        <h3 class="mb-40"></h3>
-                        <p class="feat-description mb-30"></p>
-                        <a href="#" id="arrow"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <!-- Contenitore del logo + menu di destra -->
+            <div class="container">
+                <div id="header-container">
+                    <!-- Logo aziendale -->
+                    <a href="#"><img src="" alt="" id="logo"></a>
+                    <!-- Menu per viewport sotto i 480px  e sotto i 768px -->
+                    <nav id="small-navbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </nav>
     
+                    <!-- Menu a comparsa per viewport sopra i 992 px -->
+                    <nav id="large-navbar">
+                        <ul>
+                            <li>
+                                <a href="#">Planning</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+            <!-- Corpo principale -->
+            <main>
+                <section>
+                    <!-- Caratteristiche principali -->
+                    <div class="container">
+                        <div id="main-features">
+                            <div class="double-column">
+                                <div class="card"></div>
+                            </div>
+                            <div class="column">
+                                <div class="card"></div>
+                            </div>
+                            <div class="column">
+                                <div class="card"></div>
+                            </div>
+                            <div class="column">
+                                <div class="card"></div>
+                            </div>
+                            <div class="column">
+                                <div class="card"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="bg-secondary"></section>
+                <section></section>
+                <section class="bg-secondary"></section>
+                <section></section>
+                <section class="bg-secondary"></section>
+
+                <!-- <section id="strategic-planning">
+
+                    Sezione planning e developement
+                    <div class="container" id="planning">
+                        <div class="column mb-40">
+                            <div id="sp-column">
+                                <div id="sp-image"></div>
+                                <h3 class="mb-40"></h3>
+                                <p class="feat-description"></p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div id="ad-column">
+                                <div id="ad-image"></div>
+                                <h3 class="mb-40"></h3>
+                                <p class="feat-description mb-30"></p>
+                                <a href="#" id="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+            </main>
+            <footer></footer>
+    </body>
 </html>

@@ -1,5 +1,16 @@
 /* IMPOSTAZIONI GENERALI */
 
+/* COLORI */
+
+/*
+AZZURRO SCURO: #0084FD
+AZZURRO CHIARO: #B5DDFF
+VIOLETTO: #9792E4
+ARANCIO: #FDC15F
+GRIGIO PER TESTI: #5A6E7F
+GRIGIO SCURO FOOTER: #333333
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +18,7 @@
 }
 
 body {
-    padding-top: 170px;
+    padding-top: 80px;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -25,66 +36,57 @@ a {
     text-decoration: none;
 }
 
-.container {
-    margin: 0 auto;
-    width: 80%;
+
+.bg-secondary {
+    background-color: #9792E4;
 }
 
-h3 {
-    color: #0084FD;
+section {
+    padding: 3rem 2rem;
+    
+    /* Da togliere */
+    min-height: 500px;
 }
 
-.mb-40 {
-    margin-bottom: 40px;
+footer {
+    background-color: #333333;
+    
+    /* Da togliere */
+    min-height: 300px;
 }
 
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-/* COLORS */
-
-/* AZZURRO SCURO: #0084FD
-AZZURRO CHIARO: #B5DDFF
-VIOLETTO: #9792E4
-ARANCIO: #FDC15F
-GRIGIO PER TESTI: #5A6E7F
-GRIGIO SCURO FOOTER: #333333
-__________________________________ */
+/* __________________________________ */
 
 
 /* Intestazione con logo e menu */
 
 header {
-    height: 100px;
-    width: 100%;
-    color: white;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: #0084FD;
-    padding: 20px 0;
+    padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
-    z-index: 1;
     margin-bottom: 80px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
 }
 
 #header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 #logo {
     width: 80px;
-    height: 30px;
-    background-color: #fff;
-}
-
-#small-navbar {
-    width: 30px;
     height: 30px;
     background-color: #fff;
 }
@@ -109,34 +111,30 @@ header {
 
 /* Caratteristiche principali */
 
-#main-features {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.column {
+    /* background-color: #B5DDFF; */
+    padding: 1rem;
+    margin-bottom: 2rem;
+    /* Da togliere */
+    min-height: 400px;
+    width: 400px;
+    border: 1px dashed black;
 }
 
-.double-column, .column {
-    display: flex;
-    flex-wrap: wrap;
+.card {
+
 }
 
 .double-column {
-    background-color: #B5DDFF;
-    border-radius: 20px;
-    padding: 20px 15px;
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    /* Da togliere */
+    min-height: 400px;
+    width: 400px;
+    border: 1px dashed black;;
 }
 
-.column {
-    background-color: #B5DDFF;
-    border-radius: 20px;
-    padding: 20px 15px;
-    max-height: 100%;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
+/* 
 .text-card {
     padding: 15px;
     width: 100%;
@@ -183,7 +181,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: #0084FD;
-}
+} */
 /* ______________________________________ */
 
 
@@ -194,32 +192,41 @@ header {
     padding: 40px 0;
 }
 
-#sp-column {
+#planning .column{
     background-color: transparent;
-    padding-top: 30px;
-}
-
-#ad-column {
-    background-color: #fff;
-    border-radius: 40px;
-    padding-top: 30px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#sp-image, #ad-image {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 80px;
+#sp-column {
+    background-color: transparent;
+    padding: 30px 0;
+}
+
+#ad-column {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 #sp-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
     border: 2px solid white;
 }
 
 #ad-image {
     border: 2px solid black;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 40px;
 }
 
 #sp-column h3 {
@@ -236,6 +243,7 @@ header {
 
 #ad-column .feat-description {
     height: 100px;
+    width: 200px;
 }
 
 #arrow {
@@ -243,4 +251,54 @@ header {
     height: 50px;
     border-radius: 50%;
     background-color: grey;
+}
+/* ___________________________ */
+
+
+/* MEDIA QUERY PER RESPONSIVE */
+
+/* ******************************** */
+
+/* SOPRA I 768 PX */
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 700px;
+    }
+    
+    #main-features {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 ;
+        }
+    
+    .column {
+        width: calc(100% / 3);
+        margin: 0;
+    }
+
+    .double-column {
+        width: calc(100% / 3 * 2);
+        margin: 0;
+    }
+}
+
+/* SOPRA I 992PX */
+
+@media screen and (min-width: 992px) {
+
+   .container {
+       max-width: 960px;
+   }
+
+   #small-navbar {
+       display: none;
+   }
+
+   #large-navbar {
+       display: block;
+   }
+
+  
 }
