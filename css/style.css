@@ -150,6 +150,17 @@ header {
 /* ___________________________ */
 
 
+/* Sezione Testimonials */
+
+
+.testimonials .column {
+    background-color: #9792E4;
+}
+
+.testimonials .column:first-child {
+    background-color: transparent;
+}
+
 /* MEDIA QUERY PER RESPONSIVE */
 
 /* ******************************** */
@@ -181,6 +192,14 @@ header {
 
     .planning .column {
         margin-bottom: 1rem;
+    }
+
+    .testimonials.flex-container {
+        flex-direction: column;
+    }
+
+    .testimonials .column {
+        width: 100%;
     }
 }
 
