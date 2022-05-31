@@ -161,6 +161,21 @@ header {
     background-color: transparent;
 }
 
+/* Sezione Benefits */
+
+.benefits {
+    text-align: center;
+}
+
+.benefits h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.benefits .column {
+    background-color: white;
+}
+
 /* MEDIA QUERY PER RESPONSIVE */
 
 /* ******************************** */
@@ -201,7 +216,12 @@ header {
     .testimonials .column {
         width: 100%;
     }
+
+    .benefits .column {
+        width: 50%;
+    }
 }
+
 
 /* SOPRA I 992PX */
 
@@ -229,5 +249,9 @@ header {
    .planning .column {
     margin-bottom: 1rem;
     width: 50%;
+   }
+   
+   .benefits .column {
+    width: calc(100% / 3);
 }
 }
